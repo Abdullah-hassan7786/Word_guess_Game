@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# 🛡️ Assembly: Endgame
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Assembly: Endgame** is a fun, interactive word-guessing game built with **React**. Inspired by classic Hangman mechanics, your mission is to defeat "Assembly" by correctly guessing the hidden word within a limited number of attempts. Each wrong guess eliminates a programming language — lose them all, and Assembly takes over! 💻⚔️
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎮 Gameplay Overview
+
+- 🔤 Guess a randomly selected word using the on-screen keyboard.
+- 🧠 Limited attempts (based on the number of languages).
+- ❌ Every wrong guess removes a language from your defense line.
+- ✅ Guess the word correctly — you win! 🎉
+- 💀 Run out of guesses — Game Over!
+
+---
+
+## 🎯 Features
+
+- 🎲 **Dynamic Word Generation** – New challenge each game
+- 🧩 **Language Chip System** – Visual feedback for wrong guesses
+- 🎹 **On-Screen Keyboard** – Color-coded responses (green = correct, red = wrong)
+- 🎉 **Victory Animation** – Confetti celebration on win
+- 🔁 **One-click Reset** – Start a new game easily
+
+---
+
+## 🛠️ Tech Stack
+
+- **React** – Functional component structure
+- **React-Confetti** – Celebration effect
+- **clsx** – Conditional class handling
+- **@react-hook/window-size** – Responsive layout support
+
+---
+
+## 📁 File Highlights
+
+| File                      | Description                                |
+|---------------------------|--------------------------------------------|
+| `src/Components/Header.jsx`  | Main game logic and UI                    |
+| `src/Components/random_word.js` | Random word generator               |
+| `src/Components/Language.js`   | Language list and styling info        |
+| `src/Components/utils.js`      | Farewell texts and helpers            |
+
+---
+
+## 🚀 Getting Started
+
+In the project directory, run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in watch mode.\
+More info: [Running Tests](https://facebook.github.io/create-react-app/docs/running-tests)
+
+---
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+More info: [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+⚠️ **Note:** This is a one-way operation.\
+Only eject if you need full control of configuration files (Webpack, Babel, ESLint, etc.)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📸 Preview
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+*Add screenshots or gameplay GIFs here.*
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📌 Future Improvements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ⌨️ Support for physical keyboard input
+- 🎯 Difficulty levels (word length / timer)
+- 🏆 Score or streak tracking
+- 🌗 Dark/light theme toggle
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📚 Learn More
 
-### Analyzing the Bundle Size
+- [React Documentation](https://reactjs.org/)
+- [Create React App Guide](https://facebook.github.io/create-react-app/docs/getting-started)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
