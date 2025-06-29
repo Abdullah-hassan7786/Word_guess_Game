@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: #D9D9D9;
+  padding: 20px;
+  height: 100vh;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Main wrapper */
+.main-container {
+    
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Header */
+.game-header {
+  text-align: center;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #F9F4DA;
+  margin-bottom: 10px;
+}
+
+.game-subtitle {
+  font-size: 0.9rem;
+  max-width: 350px;
+  margin: 0 auto;
+  color: #A3A3A3;
+}
+
+/* Status Banner */
+.section1{
+    
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F9F4DA;
+    width: 100%;
+    max-width: 350px;
+    min-height: 60px;
+    border-radius: 4px;
+    margin-block: 30px;
+
+}
+
+
+.status-banner.status-win,
+.status-banner.status-lost {
+  visibility: visible;
+}
+
+.status-banner.status-win {
+  background-color: #10A95B;
+  border: 2px solid #198754;
+  box-shadow: 0 0 10px rgba(16, 169, 91, 0.4);
+}
+
+.status-banner.status-lost {
+  background-color: #EC5D49;
+  border: 2px solid #C94C3A;
+  box-shadow: 0 0 10px rgba(236, 93, 73, 0.4);
+}
+
+.status-banner.status-title {
+  font-size: 1.3rem;
+  margin: 5px 0;
+  font-weight: 600;
+}
+.status-message-farewell{
+    background-color: #7A5EA7;
+    border: 1px dashed #323232;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.status-message {
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+/* Language Chips */
+.langlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 350px;
+  gap: 0.25rem;
+  margin-bottom: 36px;
+}
+
+.chip {
+  border-radius: 3px;
+  padding: 4.5px;
+  position: relative;
+}
+
+span.chip.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Word Display */
+.Guess_work {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 29px;
+}
+
+.word {
+  height: 40px;
+  width: 40px;
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #F9F4DA;
+}
+.missed-letter{
+    color :#C94C3A ;
+}
+
+/* Keyboard */
+.keyboard_sec {
+  display: flex;
+  max-width: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4.5px;
+  margin-bottom: 25px;
+}
+
+.keyboard_sec > button {
+  height: 35px;
+  width: 35px;
+  background-color: #FCBA29;
+  border: 1px solid #D7D7D7;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.keyboard_sec > button.green {
+  background-color: #10A95B;
+}
+
+.keyboard_sec > button.red {
+  background-color: #EC5D49;
+}
+
+/* New Game Button */
+.new-games {
+  background-color: #11B5E5;
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+  font-size: 1.26rem;
+  width: 225px;
+  height: 50px;
+  padding: 6px 12px;
+  display: block;
+  margin-inline: auto;
+  cursor: pointer;
+}
